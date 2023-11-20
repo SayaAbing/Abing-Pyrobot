@@ -130,7 +130,7 @@ async def create_botlog(client):
     )
     desc = "Group Log untuk Abing-Pyrobot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\nPowered By ~ @ab1ngstore @akuab1ng 🐧"
     try:
-        photo = "Abing/resources/logo.jpg"
+        photo = "SayaAbing/resources/logo.jpg"
         gruplog = await client.create_supergroup("Abing-Pyrobot Logs", desc)
         fine = gruplog.id
         await client.set_chat_photo(fine, photo=photo)
