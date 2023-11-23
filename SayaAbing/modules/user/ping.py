@@ -80,7 +80,7 @@ async def pingme(client: Client, message: Message):
     await message.reply_text(
         f"❏ **Pong !!**\n"
         f"**├• ** `%sms`\n"
-        f"╰•** ᴅᴀᴊᴊᴀʟ :** {client.me.mention}" % (duration)
+        f"╰•** ᴀɴᴀᴋ ʜᴀʀᴀᴍ :** {client.me.mention}" % (duration)
     )
 
 
@@ -89,7 +89,7 @@ async def pingme(client: Client, message: Message):
 async def pink(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    SayaAbing = await message.reply("**Tunggu Sebentar Kontol...**")
+    SayaAbing = await message.reply("**Tunggu Sebentar Ya Kontol...**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await SayaAbing.edit(
@@ -98,7 +98,7 @@ async def pink(client: Client, message: Message):
         f"`%sms` \n"
         f"**├•  Uptime  :** "
         f"`{uptime}` \n"
-        f"**└•  Firaun   :** {client.me.mention}" % (duration)
+        f"**└•  ᴀɴᴀᴋ ᴘᴜɴɢᴜᴛ   :** {client.me.mention}" % (duration)
     )
   
 
