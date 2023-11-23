@@ -101,16 +101,16 @@ async def end_vc_(client: Client, message: Message):
 async def joinvc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     if message.from_user.id != client.me.id:
-        SayaAbing = await message.reply("`Sabar Kontol Ini Lagi Di Naikin Ke OS...`")
+        SayaAbing = await message.reply("`Sabar Kontol Ini Lagi Naik Ke OS...`")
     else:
-        SayaAbing = await message.edit("`Processing...`")
+        SayaAbing = await message.edit("`Sabar Kontol Ini Lagi Naik Ke OS...`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
         await client.group_call.start(chat_id)
     except Exception as e:
         return await SayaAbing.edit(f"**ERROR:** `{e}`")
-    await SayaAbing.edit(f"❏ **Berhasil Ya Kontol Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`")
+    await SayaAbing.edit(f"❏ **Alay Lu Kontol Naikin Bot Ke Os**\n└ **Chat ID:** `{chat_id}`")
     await sleep(5)
     await client.group_call.set_is_mute(True)
 
@@ -124,14 +124,14 @@ async def leavevc(client: Client, message: Message):
     if message.from_user.id != client.me.id:
         SayaAbing = await message.reply("`Gw Turun Dulu Ya Kontol...`")
     else:
-        SayaAbing = await message.edit("`Processing...`")
+        SayaAbing = await message.edit("`Gw Turun Dulu Ya Kontol...`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
         await client.group_call.stop()
     except Exception as e:
         return await edit_or_reply(message, f"**ERROR:** `{e}`")
-    msg = "❏ **Berhasil Ya Kontol Turun dari Obrolan Suara**"
+    msg = "❏ **Udah Turun Tuh Bot Lu Kontol**"
     if chat_id:
         msg += f"\n└ **Chat ID:** `{chat_id}`"
     await SayaAbing.edit(msg)
