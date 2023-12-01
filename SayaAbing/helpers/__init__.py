@@ -21,7 +21,7 @@ def restart():
 
 async def join(client):
     try:
-        await client.join_chat("ab1ngstore")
+        await client.join_chat("bingstore")
         await client.join_chat("ab1ngsupport")
         await client.join_chat("ixurlaxmutualan")
         await client.join_chat("in1abing")
